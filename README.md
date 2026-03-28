@@ -21,13 +21,14 @@ sensor_lab/
 
 | センサ名 | 型番 | 計測対象 |
 |----------|------|----------|
-| -        | -    | -        |
+| [Seeed Studio RGB LED](sensors/Seeed_Studio_RGB_LED/README.md) | 104020048 | 発光（RGB LED） |
+| [Seeed Studio PIR Motion Sensor](sensors/Seeed_Studio_PIR_Motion_Sensor/README.md) | 101020020 | 人体（赤外線による動体検知） |
 
 ## マイコン一覧
 
 | マイコン名 | 型番 | メーカー |
 |------------|------|----------|
-| -          | -    | -        |
+| [Arduino Nano R4](microcontrollers/Arduino_Nano_R4/README.md) | ABX00087 | Arduino |
 
 ## センサREADMEのフォーマット
 
