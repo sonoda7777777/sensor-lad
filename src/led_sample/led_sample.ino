@@ -2,6 +2,9 @@
 
 #define NUM_LEDS 1
 
+// CLKピン11, DATAピン12, LED1個
+// CLKピンとはクロック信号のデジタルピン番号
+// DATAピンとはデータ信号のデジタルピン番号
 ChainableLED leds(11, 12, NUM_LEDS);
 
 void setup() {
