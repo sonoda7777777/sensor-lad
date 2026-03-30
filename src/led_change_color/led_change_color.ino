@@ -15,54 +15,33 @@ void setup() {
   // put your setup code here, to run once:
 }
 
-color led_color;
-int color = 0;
+/*
+ * 赤, 橙, 黄, 緑, 青, 藍, 紫 
+ * */
+color led_color[7] = {
+  {255, 0, 0},
+  {255, 127, 0},
+  {255, 255, 0},
+  {0, 255, 0},
+  {0, 0, 255},
+  {75, 0, 130},
+  {148, 0, 211},
+};
+byte color = 0;
 
 void loop() {
   // put your main code here, to run repeatedly:
   for(byte i = 0; i < NUM_LEDS; i++) {
-    leds.setColorRGB(i, led_color.red, led_color.green, led_color.blue);
+    leds.setColorRGB(i, led_color[color].red, led_color[color].green, led_color[color].blue);
   }
 
-  Serial.print(led_color.red);
-  Serial.print(", ");
-  Serial.print(led_color.green);
-  Serial.print(", ");
-  Serial.println(led_color.blue);
-
-  Serial.println(color);
-
-  switch (color) {
-    case 0:
-      if(led_color.red != 255) {
-        led_color.red++;
-      }
-      else {
-        color++;
-      }
-      break;
-    case 1:
-      if(led_color.green != 255) {
-        led_color.green++;
-      }
-      else {
-        color++;
-      }
-      break;
-    case 2:
-      if(led_color.blue != 255) {
-        led_color.blue++;
-      }
-      else {
-        color = 0;
-        led_color.red = 0;
-        led_color.green = 0;
-        led_color.blue = 0;
-      }
-      break;
-    default:
-      break;
+  
+  if(color != 6) {
+    color++;
+  }
+  else {
+    color = 0;
   }
 
-  delay(50); // ms
+  delay(500); // ms
 }
