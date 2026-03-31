@@ -18,7 +18,7 @@ void setup() {
 /*
  * 赤, 橙, 黄, 緑, 青, 藍, 紫 
  * */
-color led_color[7] = {
+const color led_color[7] = {
   {255, 0, 0},
   {255, 127, 0},
   {255, 255, 0},
@@ -35,8 +35,8 @@ void loop() {
     leds.setColorRGB(i, led_color[color].red, led_color[color].green, led_color[color].blue);
   }
 
-  
-  if(color != 6) {
+  int led_color_length = sizeof(led_color) / sizeof(led_color[0]);
+  if(color != led_color_length) {
     color++;
   }
   else {
