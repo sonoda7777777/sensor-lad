@@ -23,6 +23,8 @@ sensor_lab/
 |----------|------|----------|
 | [Seeed Studio RGB LED](sensors/Seeed_Studio_RGB_LED/README.md) | 104020048 | 発光（RGB LED） |
 | [Seeed Studio PIR Motion Sensor](sensors/Seeed_Studio_PIR_Motion_Sensor/README.md) | 101020020 | 人体（赤外線による動体検知） |
+| [Seeed Studio Moisture Sensor](sensors/Seeed_Studio_Moisture_Sensor/README.md) | 101020008 | 土壌水分 |
+| [Seeed Studio Speaker](sensors/Seeed_Studio_Speaker/README.md) | 107020001 | 音声出力（スピーカー） |
 
 ## マイコン一覧
 
